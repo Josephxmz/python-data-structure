@@ -7,20 +7,20 @@
 
 from pythonds.basic.stack import Stack  
 
-s = input()
-sta = Stack()
+s = input()  
+sta = Stack()  
 
-for a in s:
-    if not sta.isEmpty() and a == sta.peek():
-        sta.pop()
-    else:
-        sta.push(a)
-if sta.isEmpty():
-    print("None")
-else:
-    list0 = list(range(sta.size()))
-    size = sta.size()
-    for i in range(size):
-        list0[size-i-1] = sta.pop()
+for a in s:  
+    if not sta.isEmpty() and a == sta.peek():  
+        sta.pop()  
+    else:  
+        sta.push(a)  
+if sta.isEmpty():  
+    print("None")  
+else:  
+    list0 = list(range(sta.size()))  
+    size = sta.size()  
+    for i in range(size):  
+        list0[size-i-1] = sta.pop()  
     
-    print("".join(list0))
+    print("".join(list0))  
